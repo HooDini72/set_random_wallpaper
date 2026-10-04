@@ -18,11 +18,11 @@ def set_wallpaper(image_path):
         print(f"Could not set wallpaper: {e}")
         return False
 
-def get_radndom_picture(path, type):
+def get_radndom_picture(path, types):
     all_files = os.listdir(path)
     picutres = []
     for file in all_files:
-        if file.lower().endswith(type):
+        if file.lower().endswith(types):
             picutres.append(file)
     return picutres
 
