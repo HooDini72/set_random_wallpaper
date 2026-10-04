@@ -22,7 +22,7 @@ def get_radndom_picture(path, type):
     all_files = os.listdir(path)
     picutres = []
     for file in all_files:
-        if file.lower().endswith(SUPPORTED_TYPES):
+        if file.lower().endswith(type):
             picutres.append(file)
     return picutres
 
